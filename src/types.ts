@@ -3,4 +3,3 @@ export type Team = {
   teamName: string;
   school: string;
 };
-

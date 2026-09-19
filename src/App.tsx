@@ -1,9 +1,10 @@
 import TeamCard from './TeamCard';
 import type {Team} from './types';
+import TeamList from './TeamList';
 
 function MakeTeam() {
   const myTeam: Team = {
-    id: '6',
+    id: '1',
     teamName: 'Hello Kitty',
     school: 'Sanrio University',
   };
@@ -15,9 +16,14 @@ function MakeTeam() {
   );
 }
 
-export default MakeTeam;
+//export default MakeTeam;
 
 function MakeTeamArray() {
+  //const teamArray: Team[] = [];
+  //if (teamArray.length === 0) {
+    //return <div>No teams yet</div>;
+  //}
+  
   const teamArray: Team[] = [
   {
     id: '1',
@@ -46,10 +52,13 @@ function MakeTeamArray() {
   }
 ];
 
-export default MakeTeamArray() {
-  return teamArray.map((team) => (
-    <TeamCard key={team.id} team={team} />
-  ));
-}
+
+return ( 
+  <div>
+    <TeamList teams={teamArray} />
+  </div>
+)
 
 }
+
+export default MakeTeamArray;
