@@ -19,11 +19,13 @@ function MakeTeam() {
 //export default MakeTeam;
 
 function MakeTeamArray() {
+  // test case
   //const teamArray: Team[] = [];
   //if (teamArray.length === 0) {
     //return <div>No teams yet</div>;
   //}
   
+  // array of teams 
   const teamArray: Team[] = [
   {
     id: '1',
@@ -52,13 +54,15 @@ function MakeTeamArray() {
   }
 ];
 
-
+// returns team array
 return ( 
   <div>
+    {/* <h1>Selected Team: {teamName}</h1> */}
     <TeamList teams={teamArray} />
   </div>
 )
 
 }
 
+// makes info available to other files
 export default MakeTeamArray;
