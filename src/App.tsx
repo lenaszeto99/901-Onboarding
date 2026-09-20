@@ -1,6 +1,16 @@
 import TeamCard from './TeamCard';
 import type {Team} from './types';
 import TeamList from './TeamList';
+import getTeamStatus from './getTeamStatus';
+
+                        // once Promise finishes run with the result
+getTeamStatus('1').then((result) => {
+  console.log('Team 1:', result);
+});
+
+getTeamStatus('999').then((result) => {
+  console.log('Team 999:', result);
+});
 
 function MakeTeam() {
   const myTeam: Team = {
